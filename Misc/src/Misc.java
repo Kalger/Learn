@@ -1,5 +1,3 @@
-package misc;
-
 public class Misc {
     public static void main(String[] args) {
         Apple apple = new Apple();

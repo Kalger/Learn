@@ -1,5 +1,3 @@
-package android.basic.`in`.kotlin
-
 fun main() {
     makeWordList()
 }

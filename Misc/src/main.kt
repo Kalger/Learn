@@ -77,7 +77,7 @@ fun main(){
 //    for((index, element) in list.withIndex()){
 //    }
 //    try {
-        throw IOException()
+//        throw IOException()
 //    }catch (e: Exception){
 
 //    }
