@@ -61,6 +61,10 @@ class Dice (val numSides: Int) {
     }
 }
 
+fun stringAndBuilder() {
+    val str = StringBuilder("aa")
+    val str1 = "123" + "1234"
+}
 
 fun main(){
     println(3 or 4)
