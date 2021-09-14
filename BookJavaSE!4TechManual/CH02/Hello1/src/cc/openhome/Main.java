@@ -1,7 +1,14 @@
 package cc.openhome;
 
+// import cc.openhome.util.Console;
+// import cc.openhome.util.*;
+import java.util.*;
+import cc.openhome.*;
+
+
 public class Main {
     public static void main(String[] args) {
-        cc.openhome.util.Console.writeLine("Hello, World");
+        // Console.writeLine("Hello, World");
+        cc.openhome.util.Arrays arrays;
     }
 }
