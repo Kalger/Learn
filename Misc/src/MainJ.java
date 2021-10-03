@@ -1,7 +1,5 @@
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.StringReader;
-import java.net.Inet4Address;
 
 public class MainJ {
     public static void main(String[] args)  {
