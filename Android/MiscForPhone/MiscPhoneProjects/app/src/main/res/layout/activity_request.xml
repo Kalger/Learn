@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".showcase.permissions.RequestActivity">
+
+    <Button
+        android:id="@+id/permission_request_1_direct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AUDIO direct"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toEndOf="@id/permission_request_1"
+        app:layout_constraintTop_toTopOf="@id/permission_request_1"/>
+
+    <Button
+        android:id="@+id/permission_request_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AUDIO single"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"/>
+
+    <Button
+        android:id="@+id/permission_request_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location single"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <Button
+        android:id="@+id/permission_request_both"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="both multiple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.2"/>
+
+    <Button
+        android:id="@+id/multiple_permission_request_audio_one_by_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="audio multiple one by one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.3"/>
+
+    <Button
+        android:id="@+id/multiple_permission_request_loc_one_by_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="loc multiple one by one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.4"/>
+
+    <Button
+        android:id="@+id/ack_rationale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ack rationale for permission"
+        android:layout_marginTop="32dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

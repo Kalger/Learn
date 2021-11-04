@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/requestFragment">
+    <fragment
+        android:id="@+id/requestFragment"
+        android:name="com.learn.miscphone.showcase.permissions.RequestFragment"
+        android:label="fragment_request"
+        tools:layout="@layout/fragment_request" />
+</navigation>
