@@ -1,4 +1,4 @@
-package com.learn.miscphone.showcase.template.navdraweractivity
+package com.learn.miscphone.template.navdraweractivity
 
 import android.os.Bundle
 import android.view.Menu

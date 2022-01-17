@@ -1,4 +1,4 @@
-package com.learn.miscphone.showcase.permissions
+package com.learn.miscphone.permissions
 
 import android.Manifest
 import android.content.pm.PackageManager

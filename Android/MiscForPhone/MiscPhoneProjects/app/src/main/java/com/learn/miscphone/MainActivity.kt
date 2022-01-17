@@ -4,11 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.learn.miscphone.databinding.ActivityMainBinding
-import com.learn.miscphone.misc.MiscActivity
 import com.learn.miscphone.misc.xmlClick.XmlClickActivity
-import com.learn.miscphone.showcase.permissions.RequestActivity
-import com.learn.miscphone.showcase.template.basicactivity.BasicActivity
-import com.learn.miscphone.showcase.template.navdraweractivity.NavDrawerActivity
+import com.learn.miscphone.permissions.RequestActivity
+import com.learn.miscphone.template.basicactivity.BasicActivity
+import com.learn.miscphone.template.navdraweractivity.NavDrawerActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

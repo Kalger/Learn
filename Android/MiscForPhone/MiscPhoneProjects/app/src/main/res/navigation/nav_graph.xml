@@ -6,7 +6,7 @@
     app:startDestination="@id/requestFragment">
     <fragment
         android:id="@+id/requestFragment"
-        android:name="com.learn.miscphone.showcase.permissions.RequestFragment"
+        android:name="com.learn.miscphone.permissions.RequestFragment"
         android:label="fragment_request"
         tools:layout="@layout/fragment_request" />
 </navigation>

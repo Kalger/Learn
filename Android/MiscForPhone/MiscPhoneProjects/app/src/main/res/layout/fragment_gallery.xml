@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".showcase.template.navdraweractivity.ui.gallery.GalleryFragment">
+    tools:context=".template.navdraweractivity.ui.gallery.GalleryFragment">
 
     <TextView
         android:id="@+id/text_gallery"

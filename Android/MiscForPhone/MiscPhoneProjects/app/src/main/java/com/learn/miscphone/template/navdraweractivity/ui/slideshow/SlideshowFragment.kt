@@ -1,4 +1,4 @@
-package com.learn.miscphone.showcase.template.navdraweractivity.ui.slideshow
+package com.learn.miscphone.template.navdraweractivity.ui.slideshow
 
 import android.os.Bundle
 import android.view.LayoutInflater

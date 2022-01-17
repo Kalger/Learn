@@ -1,4 +1,4 @@
-package com.learn.miscphone.showcase.template.basicactivity
+package com.learn.miscphone.template.basicactivity
 
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
