@@ -3,6 +3,7 @@ package com.learn.miscphone
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.learn.miscphone.constranitlayout.FlowActivity
 import com.learn.miscphone.databinding.ActivityMainBinding
 import com.learn.miscphone.misc.xmlClick.XmlClickActivity
 import com.learn.miscphone.permissions.RequestActivity
@@ -27,6 +28,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.navDrawerButton.setOnClickListener {
             startActivity(Intent(this, NavDrawerActivity::class.java))
+        }
+
+        binding.constraintFlowButton.setOnClickListener {
+            startActivity(Intent(this, FlowActivity::class.java))
         }
 
         binding.miscButton.setOnClickListener {

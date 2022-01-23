@@ -12,17 +12,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MiscLearnPhone">
-        <activity android:name=".misc.xmlClick.XmlClickActivity"/>
+        <activity
+            android:name=".constranitlayout.FlowActivity"
+            android:exported="true" />
+        <activity android:name=".misc.xmlClick.XmlClickActivity" />
         <activity android:name=".misc.MiscActivity" />
         <activity
-            android:name="com.learn.miscphone.template.navdraweractivity.NavDrawerActivity"
+            android:name=".template.navdraweractivity.NavDrawerActivity"
             android:label="@string/title_activity_nav_drawer"
             android:theme="@style/Theme.MiscLearnPhone.NoActionBar" />
         <activity
-            android:name="com.learn.miscphone.template.basicactivity.BasicActivity"
+            android:name=".template.basicactivity.BasicActivity"
             android:label="@string/title_activity_basic"
             android:theme="@style/Theme.MiscLearnPhone.NoActionBar" />
-        <activity android:name="com.learn.miscphone.permissions.RequestActivity" />
+        <activity android:name=".permissions.RequestActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

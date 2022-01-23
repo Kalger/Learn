@@ -31,11 +31,19 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
+        android:id="@+id/constraint_flow_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="constraintLayout flow"
+        app:layout_constraintTop_toBottomOf="@id/nav_drawer_button"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
         android:id="@+id/misc_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Misc activity"
-        app:layout_constraintTop_toBottomOf="@id/nav_drawer_button"
+        app:layout_constraintTop_toBottomOf="@id/constraint_flow_button"
         app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
