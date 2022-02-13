@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiscLearnPhone">
         <activity
+            android:name=".misc.style.ThemeAttrActivity"
+            android:exported="false" />
+        <activity
             android:name=".constranitlayout.FlowActivity"
             android:exported="true" />
         <activity android:name=".misc.xmlClick.XmlClickActivity" />

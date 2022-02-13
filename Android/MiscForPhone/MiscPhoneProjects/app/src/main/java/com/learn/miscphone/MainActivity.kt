@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.learn.miscphone.constranitlayout.FlowActivity
 import com.learn.miscphone.databinding.ActivityMainBinding
+import com.learn.miscphone.misc.MiscActivity
+import com.learn.miscphone.misc.style.ThemeAttrActivity
 import com.learn.miscphone.misc.xmlClick.XmlClickActivity
 import com.learn.miscphone.permissions.RequestActivity
 import com.learn.miscphone.template.basicactivity.BasicActivity
@@ -35,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.miscButton.setOnClickListener {
-            startActivity(Intent(this, XmlClickActivity::class.java))
+            startActivity(Intent(this, ThemeAttrActivity::class.java))
         }
     }
 }
