@@ -1,5 +1,6 @@
 package com.example.activitytest
 
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -10,14 +11,15 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
 
-class FirstActivity : AppCompatActivity() {
+class FirstActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.first_layout)
-        Log.d(TAG, this.toString())
+        Log.d(TAG, "task id is $taskId")
         val button1 = findViewById<Button>(R.id.button1)
         button1.setOnClickListener {
-            case352()
+            case363()
+//            case352()
 //            case351()
 //            case335()
 //            case334()
@@ -28,9 +30,18 @@ class FirstActivity : AppCompatActivity() {
         }
     }
 
+    private fun case363() {
+        SecondActivity.actionStart(this, "data1", "data2")
+    }
+
     override fun onRestart() {
         super.onRestart()
         Log.d(TAG, "onRestart")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "onDestroy")
     }
 
     private fun case352() {

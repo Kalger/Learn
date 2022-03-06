@@ -1,22 +1,24 @@
 package com.example.activitytest
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.example.activitytest.databinding.SecondLayoutBinding
 
-class SecondActivity : AppCompatActivity() {
+class SecondActivity : BaseActivity() {
 
     lateinit var binding: SecondLayoutBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d(TAG, this.toString())
+        Log.d(TAG, "task id is $taskId")
         binding = SecondLayoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.button2.setOnClickListener {
-            case352()
+            case354()
+//            case352()
 //            case335()
         }
 //        case334()
@@ -25,6 +27,11 @@ class SecondActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         Log.d(TAG, "onDestroy")
+    }
+
+    private fun case354() {
+        val intent = Intent(this, ThirdActivity::class.java)
+        startActivity(intent)
     }
 
     private fun case352() {
@@ -52,5 +59,13 @@ class SecondActivity : AppCompatActivity() {
 
     companion object {
         const val TAG = "SecondActivity"
+
+        fun actionStart(ctx: Context, data1: String, data2: String) {
+            val intent = Intent(ctx, SecondActivity::class.java)
+            intent.putExtra("key1", data1)
+            intent.putExtra("key2", data2)
+            ctx.startActivity(intent)
+        }
+
     }
 }
