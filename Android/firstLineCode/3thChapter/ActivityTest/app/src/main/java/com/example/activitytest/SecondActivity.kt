@@ -11,11 +11,20 @@ class SecondActivity : AppCompatActivity() {
     lateinit var binding: SecondLayoutBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(TAG, this.toString())
         binding = SecondLayoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.button2.setOnClickListener { case335() }
+        binding.button2.setOnClickListener {
+            case352()
+//            case335()
+        }
 //        case334()
+    }
+
+    private fun case352() {
+        val intent = Intent(this, FirstActivity::class.java)
+        startActivity(intent)
     }
 
     private fun case335() {
@@ -32,7 +41,11 @@ class SecondActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        case335()
+//        case335()
         super.onBackPressed()
+    }
+
+    companion object {
+        const val TAG = "SecondActivity"
     }
 }

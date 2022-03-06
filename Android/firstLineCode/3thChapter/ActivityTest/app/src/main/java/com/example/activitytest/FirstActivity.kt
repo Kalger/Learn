@@ -14,16 +14,28 @@ class FirstActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.first_layout)
-
+        Log.d(TAG, this.toString())
         val button1 = findViewById<Button>(R.id.button1)
         button1.setOnClickListener {
-            case335()
+            case352()
+//            case351()
+//            case335()
 //            case334()
 //            case333Dial()
 //            case333View()
 //            case332()
 //            case331()
         }
+    }
+
+    private fun case352() {
+        val intent = Intent(this, SecondActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun case351() {
+        val intent = Intent(this, FirstActivity::class.java)
+        startActivity(intent)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
