@@ -22,6 +22,11 @@ class SecondActivity : AppCompatActivity() {
 //        case334()
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "onDestroy")
+    }
+
     private fun case352() {
         val intent = Intent(this, FirstActivity::class.java)
         startActivity(intent)

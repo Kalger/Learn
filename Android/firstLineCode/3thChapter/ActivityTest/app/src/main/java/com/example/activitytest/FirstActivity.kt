@@ -28,6 +28,11 @@ class FirstActivity : AppCompatActivity() {
         }
     }
 
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "onRestart")
+    }
+
     private fun case352() {
         val intent = Intent(this, SecondActivity::class.java)
         startActivity(intent)
