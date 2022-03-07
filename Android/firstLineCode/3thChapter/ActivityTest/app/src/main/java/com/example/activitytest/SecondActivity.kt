@@ -61,9 +61,10 @@ class SecondActivity : BaseActivity() {
         const val TAG = "SecondActivity"
 
         fun actionStart(ctx: Context, data1: String, data2: String) {
-            val intent = Intent(ctx, SecondActivity::class.java)
-            intent.putExtra("key1", data1)
-            intent.putExtra("key2", data2)
+            val intent = Intent(ctx, SecondActivity::class.java).apply {
+                putExtra("key1", data1)
+                putExtra("key2", data2)
+            }
             ctx.startActivity(intent)
         }
 
