@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AlgerHome/Projects_Mine/Learn/Android/BasicInKotlinCourse/android-basics-kotlin-cupcake-app-starter/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/AlgerHome/Projects_Mine/Learn/Android/BasicInKotlinCourse/android-basics-kotlin-cupcake-app-starter/app/src/main/res/layout/fragment_flavor.xml" value="0.36614583333333334" />
         <entry key="..\:/WorkSpace/AndroidProjects/LearnAndroid/BasicInKotlinCourse/android-basics-kotlin-cupcake-app-starter/app/src/main/res/layout/fragment_flavor.xml" value="0.1" />
         <entry key="..\:/WorkSpace/AndroidProjects/LearnAndroid/BasicInKotlinCourse/android-basics-kotlin-cupcake-app-starter/app/src/main/res/layout/fragment_start.xml" value="0.22395833333333334" />
         <entry key="..\:/WorkSpace/AndroidProjects/LearnAndroid/BasicInKotlinCourse/android-basics-kotlin-cupcake-app-starter/app/src/main/res/layout/fragment_summary.xml" value="0.1" />
