@@ -12,32 +12,13 @@ import com.learn.miscphone.permissions.RequestActivity
 import com.learn.miscphone.template.basicactivity.BasicActivity
 import com.learn.miscphone.template.navdraweractivity.NavDrawerActivity
 
+/**
+ * use ListFragment
+ * referenced from https://codertw.com/android-%E9%96%8B%E7%99%BC/349301/
+ */
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        binding.permission.setOnClickListener {
-            startActivity(Intent(this, RequestActivity::class.java))
-        }
-
-        binding.basicButton.setOnClickListener {
-            startActivity(Intent(this, BasicActivity::class.java))
-        }
-
-        binding.navDrawerButton.setOnClickListener {
-            startActivity(Intent(this, NavDrawerActivity::class.java))
-        }
-
-        binding.constraintFlowButton.setOnClickListener {
-            startActivity(Intent(this, FlowActivity::class.java))
-        }
-
-        binding.miscButton.setOnClickListener {
-            startActivity(Intent(this, ThemeAttrActivity::class.java))
-        }
     }
 }

@@ -20,4 +20,12 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name="Planets">
+        <item>permission</item>
+        <item>basic activity</item>
+        <item>navigation drawer activity</item>
+        <item>constraintLayout flow</item>
+        <item>Misc activity</item>
+    </string-array>
 </resources>
