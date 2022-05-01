@@ -1,4 +1,4 @@
-package com.example.apparch.guide.datalayer
+package com.example.apparch.guide
 
 import android.content.Context
 import android.os.Build

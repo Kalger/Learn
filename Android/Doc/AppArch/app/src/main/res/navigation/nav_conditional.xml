@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_conditional"
+    app:startDestination="@id/conMainFragment">
+
+    <fragment
+        android:id="@+id/conMainFragment"
+        android:name="com.example.apparch.navigation.component.condition.ConMainFragment"
+        android:label="fragment_con_main"
+        tools:layout="@layout/fragment_con_main" >
+        <action
+            android:id="@+id/action_conMainFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.apparch.navigation.component.condition.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.apparch.navigation.component.condition.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+</navigation>
