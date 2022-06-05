@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Summit19">
         <activity
-            android:name=".MainActivity"
+            android:name=".livedataflow.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
