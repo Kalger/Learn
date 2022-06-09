@@ -54,6 +54,10 @@ class NewsViewModel(
         }
     }
 
+    private fun getMessagesFromThrowable(ioe: IOException): List<Message> {
+        return listOf<Message>()
+    }
+
 }
 
 class NewsActivity : AppCompatActivity() {
@@ -75,8 +79,11 @@ class NewsActivity : AppCompatActivity() {
                 viewModel.uiState
                     .map { it.isFetchingArticle }
                     .distinctUntilChanged()
-                    .collect { progressbar.isVisible = it }
+                    .collect { showProgressBar(it) }
             }
         }
+    }
+
+    private fun showProgressBar(it: Boolean) {
     }
 }

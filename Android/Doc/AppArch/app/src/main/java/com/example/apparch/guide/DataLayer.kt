@@ -4,22 +4,32 @@ import android.content.Context
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.work.*
+import com.example.apparch.guide.ui.NewsItemUiState
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.async
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
+import java.util.*
 import java.util.concurrent.TimeUnit
 
 class ExampleRepository(
     private val remoteDataSrc: ExampleRemoteDataSource,
     private val localDataSrc: ExampleLocalDataSource
 ) {
-    val data: Flow<Example> =
+    val data: Flow<Example> = flow {  }
 
     suspend fun modifyData(example: Example) {}
 }
+
+class Example
+
+interface ExampleRemoteDataSource
+
+interface ExampleLocalDataSource
 
 data class ArticleApiModel(
     val id: Long,
@@ -34,6 +44,10 @@ data class ArticleApiModel(
     val authorDateOfBirth: Date,
     val readTimeMin: Int
 )
+
+class CommentApiModel {
+
+}
 
 data class Article(
     val id: Long,
@@ -54,6 +68,10 @@ class NewsRemoteDataSrc(
     }
 }
 
+class ArticleHeadline {
+
+}
+
 interface NewsApi {
     fun fetchLatestNews(): List<ArticleHeadline>
 }
@@ -62,6 +80,12 @@ class NewsRepo(
     private val newsRemoteDataSrc: NewsRemoteDataSrc
 ) {
     suspend fun fetchLatestNews(): List<ArticleHeadline> = newsRemoteDataSrc.fetchLatestNews()
+
+    suspend fun refreshLatestNews()  {  }
+    fun newsItemsForCategory(category: String): List<NewsItemUiState> {
+        return listOf<NewsItemUiState>()
+    }
+
 }
 
 // cache
@@ -86,7 +110,7 @@ class NewsRepoCaseCache(
 
 // WorkManager
 class RefreshLatestNewsWorker(
-    private val newsRepository: NewsReposiotry,
+    private val newsRepository: NewsRepo,
     content: Context,
     params: WorkerParameters
 ) : CoroutineWorker(content, params) {
@@ -97,6 +121,7 @@ class RefreshLatestNewsWorker(
         Result.failure()
     }
 }
+
 
 
 private const val REFRESH_RATE_HOURS = 4L
