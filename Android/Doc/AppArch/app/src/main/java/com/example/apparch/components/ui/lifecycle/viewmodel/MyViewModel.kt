@@ -22,5 +22,5 @@ class MyViewModel : ViewModel() {
 }
 
 class User {
-
+    val name = "name"
 }
