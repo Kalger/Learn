@@ -13,6 +13,10 @@ suspend fun fetchTwoDocs() =
         deferred2.await()
     }
 
+fun fetchDoc(i: Int) {
+
+}
+
 suspend fun fetchTwoDocs2() =
     coroutineScope {
         val deferredList = listOf(
